@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .tooltip-area {
+      position: relative;
+      display: inline-block;
+    }
+    .tooltip-area .tooltip {
+      visibility: hidden;
+      width: auto;
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 3px 6px;
+      border-radius: 4px;
+      position: absolute;
+      z-index: 1;
+      font-size: 12px;
+      top: -30px;
+      left: 50%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+    }
+    .tooltip-area:hover .tooltip {
+      visibility: visible;
+    }
+  </style>
+</head>
+<body>
+  <div style="position: relative; display: inline-block;">
+    <img src="Captura (1).jpg" width="800">
+
+    <!-- Tooltip: Edificio A -->
+    <div class="tooltip-area" style="position: absolute; top: 60px; left: 60px; width: 100px; height: 100px;">
+      <div class="tooltip">Edificio A</div>
+    </div>
+
+    <!-- Tooltip: Empaque -->
+    <div class="tooltip-area" style="position: absolute; top: 200px; left: 300px; width: 100px; height: 100px;">
+      <div class="tooltip">Empaque</div>
+    </div>
+
+    <!-- Tooltip: Taller Eléctrico -->
+    <div class="tooltip-area" style="position: absolute; top: 400px; left: 600px; width: 100px; height: 100px;">
+      <div class="tooltip">Taller Eléctrico</div>
+    </div>
+  </div>
+</body>
+</html>
